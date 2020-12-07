@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito+Sans:wght@400;700&family=PT+Sans&display=swap");
+*, *:active {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ee8a14;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.navbar {
+  background-color: rgba(238, 138, 20, 0.8);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.navbar.navbar-desktop ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 1093px;
+  padding: 0 80px;
+}
+.navbar.navbar-desktop ul li > a {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.pre {
+  background-color: black;
+  width: 100%;
+  height: 70px;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.section#start {
+  background: url("/loopp1.ac2ce71c.jpg");
+}
+.section#tvseries {
+  background: url("/loopp2.9a4cffe3.jpg");
+}
+.section#getthegame {
+  background: url("/loopp3.51e5250a.jpg");
+}
+.section#overview {
+  background: url("/loopp4.59edc94c.jpg");
+}
+.section#thegame {
+  background: url("/loopp5.130c2701.jpg");
+}
+.section#reviews {
+  background: url("/loopp6.79ef0afe.jpg");
+}
+.section#theteam {
+  background: url("/loopp7.9c94157e.jpg");
+}
+
+.section#start, .section#tvseries, .section#getthegame, .section#overview, .section#thegame, .section#reviews, .section#theteam {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section > .container {
+  width: 1093px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.section > .container h1 {
+  font-family: "Nunito Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#start img {
+  height: auto;
+  width: 85%;
+  margin: 60px auto 0 auto;
+  display: block;
+}
+#start .action {
+  background-color: rgba(238, 138, 20, 0.8);
+  width: 910px;
+  padding: 40px 80px;
+  margin: 0 auto;
+}
+#start .action-description {
+  margin-top: 150px;
+}
+#start .action-description p {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+}
+#start .action-description p:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+#start .action-buttons {
+  margin-top: 20px;
+  padding-left: 160px;
+  padding-right: 160px;
+  display: flex;
+  justify-content: space-around;
+}
+#start .action-buttons a {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  background-color: #000000;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 6px;
+}
+#start .action-buttons a:hover {
+  color: #999999;
+}
+
+#movie {
+  display: block;
+  width: 800px;
+  height: 450px;
+  margin: 75px auto 0 auto;
+}
+
+#getthegame .action,
+#overview .action,
+#thegame .action {
+  background-color: rgba(238, 138, 20, 0.8);
+  width: 910px;
+  padding: 40px 80px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+#getthegame .action p,
+#overview .action p,
+#thegame .action p {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+#getthegame > .container > .action {
+  margin-top: 0px;
+}
+
+#getthegame > .container > .products {
+  display: flex;
+  margin: 25px auto 0 auto;
+  width: 910px;
+  justify-content: space-between;
+}
+#getthegame > .container > .products .product {
+  display: flex;
+  flex-direction: column;
+  transition: transform 300ms ease;
+}
+#getthegame > .container > .products .product img {
+  width: 290px;
+  height: 290px;
+}
+#getthegame > .container > .products .product p {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(238, 138, 20, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+}
+#getthegame > .container > .products .product:hover {
+  transform: scale(1.05);
+}
+
+.animated-right {
+  transform: translateX(-200%);
+}
+
+.animated-left {
+  transform: translateX(200%);
+}
+
+.animated-top {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.animation-flyleft {
+  animation: fly-in-left;
+  animation-duration: 1250ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.animation-flyright {
+  animation: fly-in-right;
+  animation-duration: 1250ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.animation-flytop {
+  animation: fly-in-top;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1000ms;
+}
+
+@keyframes fly-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fly-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes fly-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=/styles.434540e1.css.map */
